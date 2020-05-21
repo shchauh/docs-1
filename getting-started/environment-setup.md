@@ -1,6 +1,6 @@
 # Environment Setup
 
-Dapr can be run in either Standalone or Kubernetes modes. Running Dapr runtime in Standalone mode enables you to develop Dapr applications in your local development environment and then deploy and run them in other Dapr supported environments. For example, you can develop Dapr applications in Standalone mode and then deploy them to any Kubernetes cluster.
+Dapr can run in either standalone or kubernetes mode. Running Dapr in standalone mode enables you to develop Dapr applications in your local development environment and then deploy them in other Dapr supported environments. For example you can develop Dapr applications in standalone mode and then deploy them to any Kubernetes cluster.
 
 ## Contents
 
@@ -21,11 +21,12 @@ Dapr can be run in either Standalone or Kubernetes modes. Running Dapr runtime i
 
 **Windows**
 
-Install the latest windows Dapr cli to `c:\dapr` and add this directory to User PATH environment variable.
+Install the latest windows Dapr cli with following command 
 
 ```powershell
 powershell -Command "iwr -useb https://raw.githubusercontent.com/dapr/cli/master/install/install.ps1 | iex"
 ```
+Above command will install Dapr in `c:\dapr` and will also add this directory to user's PATH environment variable.
 
 **Linux**
 
@@ -51,7 +52,7 @@ brew install dapr/tap/dapr-cli
 
 ### From the Binary Releases
 
-Each release of Dapr CLI includes various OSes and architectures. These binary versions can be manually downloaded and installed.
+Each release of Dapr CLI includes various operating systems and architectures. These binary versions can be manually downloaded and installed.
 
 1. Download the [Dapr CLI](https://github.com/dapr/cli/releases)
 2. Unpack it (e.g. dapr_linux_amd64.tar.gz, dapr_windows_amd64.zip)
@@ -61,7 +62,7 @@ Each release of Dapr CLI includes various OSes and architectures. These binary v
 
 ## Installing Dapr in standalone mode
 
-### Install Dapr runtime using the CLI
+### Install Dapr using the Dapr CLI
 
 Install Dapr by running `dapr init` from a command prompt
 
